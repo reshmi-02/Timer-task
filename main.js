@@ -9,7 +9,7 @@ var timerstop=document.getElementById("stop");
 var timerrestart=document.getElementById("restart");
 
 timerstart.addEventListener("click",function(){
-    ms=setInterval(timer,1);
+    ms=setInterval(timer,1000);
   })
 
 
