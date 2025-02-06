@@ -9,7 +9,7 @@ var timerstop=document.getElementById("stop");
 var timerrestart=document.getElementById("restart");
 
 timerstart.addEventListener("click",function(){
-    ms=setInterval(timer,1000);
+    ms=setInterval(timer,1);
   })
 
 
@@ -43,7 +43,7 @@ function timer(){
         seconds.innerHTML=a;
     }
     else{
-       clearInterval(seconds);
+    //    clearInterval(seconds);
        a=0;
        if(b<9){
         b++;
@@ -59,7 +59,7 @@ function timer(){
          }
 
     else{
-       clearInterval(minute);
+    //    clearInterval(minute);
        b=0;
        if(c<9){
         
@@ -72,7 +72,7 @@ function timer(){
             hours.innerHTML=c;
             }
         else{
-            clearInterval(hours);
+            // clearInterval(hours);
             c=0;
             }
     }
